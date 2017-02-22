@@ -1,0 +1,65 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: tan; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(tan, purple); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(tan, purple); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(tan, purple); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(tan, purple); /* Standard syntax */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: green;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+font-family: 'Roboto', sans-serif;
+color: #fff;
+text-align: center;
+position: fixed;
+bottom: 5px;
+width:100%;
+}
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+    }
+
+}
